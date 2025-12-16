@@ -1,6 +1,4 @@
 import "@/styles/globals.css";
-import Header from "@/components/Header";
-import Starfield from "@/components/Starfield";
 import Providers from "./providers";
 import { mainFont } from "./fonts";
 
