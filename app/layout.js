@@ -1,6 +1,7 @@
 import "@/styles/globals.css";
 import Providers from "./providers";
 import { mainFont } from "./fonts";
+import { Analytics } from "@vercel/analytics/next"
 
 export const metadata = {
   title: {
@@ -54,7 +55,7 @@ export default function RootLayout({ children }) {
     <html lang="en" className={mainFont.className}>
       <body style={{ margin: 0, padding: 0, overflowX: "hidden" }}>
         <Providers>
-
+<Analytics/>
 
           <main style={{ position: "relative", zIndex: 0 }}>
             {children}

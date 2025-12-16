@@ -8,13 +8,14 @@
     "start": "next start",
     "lint": "next lint"
   },
-"dependencies": {
-  "@chakra-ui/react": "^2.8.2",
-  "@emotion/react": "^11",
-  "@emotion/styled": "^11",
-  "framer-motion": "^10",
-  "next": "14.2.5",
-  "react": "18.3.1",
-  "react-dom": "18.3.1"
-}
+  "dependencies": {
+    "@chakra-ui/react": "^2.8.2",
+    "@emotion/react": "^11",
+    "@emotion/styled": "^11",
+    "@vercel/analytics": "^1.6.1",
+    "framer-motion": "^10",
+    "next": "14.2.5",
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  }
 }
