@@ -101,7 +101,7 @@ export default function Overlay({ isOpen, onClose, item }) {
   _hover={{ bg: "rgba(0,0,0,0.2)" }}
   _active={{ bg: "rgba(0,0,0,0.2)" }}
   onClick={onClose}
-  p={10px}
+  p="10px"
 >
   <CloseIcon boxSize={5} />
 </Button>
