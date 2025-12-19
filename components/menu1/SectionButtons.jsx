@@ -16,6 +16,7 @@ export default function SectionButtons() {
       zIndex="1000"
       borderBottom="1px solid #1111111c"
       py={5}
+      backdropFilter="blur(6px)"
     >
       <HStack spacing={4} justify="center" flexWrap="wrap">
         {sections.map((sec) => (
@@ -23,6 +24,8 @@ export default function SectionButtons() {
             key={sec}
             onClick={() => scrollToSection(sec)}
             variant="outline"
+            border="apx solid #000"
+             color="#6c5e4f"
             fontWeight="bold"
             _hover={{ transform: "scale(1.05)" }}
           >
