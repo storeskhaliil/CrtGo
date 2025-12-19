@@ -1,67 +1,21 @@
-import "@/styles/globals.css";
-import Providers from "./providers";
-import { mainFont } from "./fonts";
 import { Analytics } from "@vercel/analytics/next"
+import "@/styles/globals.css";
+import { mainFont } from "./fonts";
+import { Providers } from "./providers";
 
 export const metadata = {
-  title: {
-    default: "CRTGO",
-    template: "%s",
-  },
-  description:
-    "",
-
-  openGraph: {
-    type: "website",
-    siteName: "CRTGO",
-    url: "https://crtgo.com",
-    images: [
-      {
-        url: "",
-        width: 1200,
-        height: 630,
-        alt: "",
-      },
-    ],
-  },
-
-  twitter: {
-    card: "summary_large_image",
-    creator: "@khaliil",
-    images: [
-      "",
-    ],
-  },
-
-  robots: {
-    index: true,
-    follow: true,
-  },
-
-  manifest: "/manifest.json",
-
-  icons: {
-    icon: [
-      { url: "/images/favicon.ico" },
-      { url: "/images/favicon-16x16.png", sizes: "16x16", type: "image/png" },
-      { url: "/images/favicon-32x32.png", sizes: "32x32", type: "image/png" },
-    ],
-    apple: "/images/apple-touch-icon.png",
-  },
+  title: "My App",
+  description: "My Next.js App",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={mainFont.className}>
-      <body style={{ margin: 0, padding: 0, overflowX: "hidden" }}>
-        <Providers>
-<Analytics/>
-
-          <main style={{ position: "relative", zIndex: 0 }}>
-            {children}
-          </main>
-        </Providers>
+      <body>
+        <Providers><Analytics/>{children}</Providers>
       </body>
     </html>
   );
 }
+
+
