@@ -16,6 +16,30 @@ const menuData = {
       desc: "كرات بطاطا البيريه مغطاه بالجبنة الذائبة",
       img: "https://images.unsplash.com/photo-1551218808-94e220e084d2",
     },
+        {
+      name: "برجر نباتي",
+      price: "50₪",
+      desc: "كرات بطاطا البيريه مغطاه بالجبنة الذائبة",
+      img: "https://images.unsplash.com/photo-1551218808-94e220e084d2",
+    },
+        {
+      name: "برجر نباتي",
+      price: "50₪",
+      desc: "كرات بطاطا البيريه مغطاه بالجبنة الذائبة",
+      img: "https://images.unsplash.com/photo-1551218808-94e220e084d2",
+    },
+        {
+      name: "برجر نباتي",
+      price: "50₪",
+      desc: "كرات بطاطا البيريه مغطاه بالجبنة الذائبة",
+      img: "https://images.unsplash.com/photo-1551218808-94e220e084d2",
+    },
+        {
+      name: "برجر نباتي",
+      price: "50₪",
+      desc: "كرات بطاطا البيريه مغطاه بالجبنة الذائبة",
+      img: "https://images.unsplash.com/photo-1551218808-94e220e084d2",
+    },
     // ...repeat items
   ],
   برجر: [
@@ -25,9 +49,75 @@ const menuData = {
       desc: "كرات بطاطا البيريه مغطاه بالجبنة الذائبة",
       img: "https://images.unsplash.com/photo-1551218808-94e220e084d2",
     },
+        {
+      name: "برجر نباتي",
+      price: "50₪",
+      desc: "كرات بطاطا البيريه مغطاه بالجبنة الذائبة",
+      img: "https://images.unsplash.com/photo-1551218808-94e220e084d2",
+    },
+        {
+      name: "برجر نباتي",
+      price: "50₪",
+      desc: "كرات بطاطا البيريه مغطاه بالجبنة الذائبة",
+      img: "https://images.unsplash.com/photo-1551218808-94e220e084d2",
+    },
+        {
+      name: "برجر نباتي",
+      price: "50₪",
+      desc: "كرات بطاطا البيريه مغطاه بالجبنة الذائبة",
+      img: "https://images.unsplash.com/photo-1551218808-94e220e084d2",
+    },
+        {
+      name: "برجر نباتي",
+      price: "50₪",
+      desc: "كرات بطاطا البيريه مغطاه بالجبنة الذائبة",
+      img: "https://images.unsplash.com/photo-1551218808-94e220e084d2",
+    },
+        {
+      name: "برجر نباتي",
+      price: "50₪",
+      desc: "كرات بطاطا البيريه مغطاه بالجبنة الذائبة",
+      img: "https://images.unsplash.com/photo-1551218808-94e220e084d2",
+    },
+        {
+      name: "برجر نباتي",
+      price: "50₪",
+      desc: "كرات بطاطا البيريه مغطاه بالجبنة الذائبة",
+      img: "https://images.unsplash.com/photo-1551218808-94e220e084d2",
+    },
   ],
   مشروبات: [
     {
+      name: "برجر نباتي",
+      price: "50₪",
+      desc: "كرات بطاطا البيريه مغطاه بالجبنة الذائبة",
+      img: "https://images.unsplash.com/photo-1551218808-94e220e084d2",
+    },
+        {
+      name: "برجر نباتي",
+      price: "50₪",
+      desc: "كرات بطاطا البيريه مغطاه بالجبنة الذائبة",
+      img: "https://images.unsplash.com/photo-1551218808-94e220e084d2",
+    },
+        {
+      name: "برجر نباتي",
+      price: "50₪",
+      desc: "كرات بطاطا البيريه مغطاه بالجبنة الذائبة",
+      img: "https://images.unsplash.com/photo-1551218808-94e220e084d2",
+    },
+        {
+      name: "برجر نباتي",
+      price: "50₪",
+      desc: "كرات بطاطا البيريه مغطاه بالجبنة الذائبة",
+      img: "https://images.unsplash.com/photo-1551218808-94e220e084d2",
+    },
+        {
+      name: "برجر نباتي",
+      price: "50₪",
+      desc: "كرات بطاطا البيريه مغطاه بالجبنة الذائبة",
+      img: "https://images.unsplash.com/photo-1551218808-94e220e084d2",
+    },
+        {
       name: "برجر نباتي",
       price: "50₪",
       desc: "كرات بطاطا البيريه مغطاه بالجبنة الذائبة",
