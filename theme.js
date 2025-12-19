@@ -9,8 +9,8 @@ const theme = extendTheme({
   styles: {
     global: {
       body: {
-        bg: "#000",
-        color: "#fff",
+        bg: "#fff",
+        color: "#000",
         fontFamily: "inherit",
       },
     },
