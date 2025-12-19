@@ -8,7 +8,8 @@ export default function Overlay({ isOpen, onClose, item }) {
     <Box
       position="fixed"
       inset="0"
-      bg="rgba(0,0,0,0.95)"
+      bg="transparent"
+      backdropFilter="blur(6px)"
       display="flex"
       justifyContent="center"
       alignItems="center"
@@ -17,9 +18,9 @@ export default function Overlay({ isOpen, onClose, item }) {
       <Box
         bg="white"
         borderRadius="md"
-        maxH="80vh"
-        maxW="70vw"
-        w="100%"
+maxH="80vh"
+w="100%"
+maxW={{ base: "100%", lg: "70vw" }}
         textAlign="center"
         p={6}
         animation="slideUp 0.35s ease"
