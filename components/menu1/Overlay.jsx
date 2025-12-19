@@ -17,13 +17,14 @@ export default function Overlay({ isOpen, onClose, item }) {
       <Box
         bg="white"
         borderRadius="md"
-        maxW="600px"
-        w="90%"
+        maxH="80vh"
+        maxW="70vw"
+        w="100%"
         textAlign="center"
         p={6}
         animation="slideUp 0.35s ease"
       >
-        <Image src={item.img} borderRadius="md" mb={4} />
+        <Image src={item.img} maxW="100%" borderRadius="md" mb={4} />
         <Heading size="md" mb={2}>{item.name}</Heading>
         <Text mb={1}>{item.price}</Text>
         <Text color="gray.500">{item.desc}</Text>
@@ -32,6 +33,9 @@ export default function Overlay({ isOpen, onClose, item }) {
         position="fixed"
         bottom="20px"
         left="50%"
+        bg="transparent"
+        border="1px solid #000"
+        color="#000"
         transform="translateX(-50%)"
         fontSize="2xl"
         onClick={onClose}
