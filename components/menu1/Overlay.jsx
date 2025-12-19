@@ -78,7 +78,9 @@ export default function Overlay({ isOpen, onClose, item }) {
           w={{ base: "100%", lg: "40%" }}
           maxW={{ base: "100%", sm: "60vw" }}
           aspectRatio="1 / 1"
-          order={{ base: 1, lg: 2 }}
+          alignItems="center"
+          justifyContent="center"
+          order={{ base: 1, md: 2 }}
         >
           <Image
             src={item.img}
