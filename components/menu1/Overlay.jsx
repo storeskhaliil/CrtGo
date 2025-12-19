@@ -32,7 +32,7 @@ export default function Overlay({ isOpen, onClose, item }) {
     <Box
       position="fixed"
       inset="0"
-      bg="transparent"
+      bg="rgba(0,0,0,0.6)"
       backdropFilter="blur(6px)"
       display="flex"
       justifyContent="center"
@@ -100,7 +100,7 @@ export default function Overlay({ isOpen, onClose, item }) {
   _hover={{ bg: "rgba(0,0,0,0.2)" }}
   _active={{ bg: "rgba(0,0,0,0.2)" }}
   onClick={onClose}
-  p={0}
+  p={10px}
   minW="auto"
 >
   <CloseIcon boxSize={5} />
