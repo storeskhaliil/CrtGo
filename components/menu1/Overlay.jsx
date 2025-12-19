@@ -76,7 +76,7 @@ export default function Overlay({ isOpen, onClose, item }) {
         <Box
           flexShrink={0}
           w={{ base: "100%", lg: "40%" }}
-          maxW={{ base: "100%", md: "60vw" }}
+          maxW={{ base: "100%", sm: "60vw" }}
           aspectRatio="1 / 1"
           order={{ base: 1, lg: 2 }}
         >
@@ -97,9 +97,10 @@ export default function Overlay({ isOpen, onClose, item }) {
   left="50%"
   transform="translateX(-50%)"
   bg="white"
+  border="1px solid #000"
   color="#000"
-  _hover={{ bg: "rgba(0,0,0,0.2)" }}
-  _active={{ bg: "rgba(0,0,0,0.2)" }}
+  _hover={{ bg: "rgba(0,0,0,0.1)" }}
+  _active={{ bg: "rgba(0,0,0,0.1)" }}
   onClick={onClose}
   p="10px"
 >
