@@ -76,6 +76,7 @@ export default function Overlay({ isOpen, onClose, item }) {
         <Box
           flexShrink={0}
           w={{ base: "100%", lg: "40%" }}
+        maxW={{ base: "100%", md: "300px", lg: "40%" }}
           aspectRatio="1 / 1"
           order={{ base: 1, lg: 2 }}
         >
