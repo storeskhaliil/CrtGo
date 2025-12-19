@@ -39,7 +39,7 @@ export default function Overlay({ isOpen, onClose, item }) {
       alignItems="center"
       zIndex="2000"
     >
-      {/* Modal */}
+   {/* Modal */}
       <Flex
         bg="white"
         borderRadius="md"
@@ -77,9 +77,7 @@ export default function Overlay({ isOpen, onClose, item }) {
           flexShrink={0}
           w={{ base: "100%", lg: "40%" }}
           aspectRatio="1 / 1"
-          alignItems="center"
-          justifyContent="center"
-          order={{ base: 1, md: 2 }}
+          order={{ base: 1, lg: 2 }}
         >
           <Image
             src={item.img}
