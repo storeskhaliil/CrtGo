@@ -76,17 +76,17 @@ export default function Overlay({ isOpen, onClose, item }) {
         <Box
           flexShrink={0}
           w={{ base: "100%", lg: "40%" }}
-          maxW={{ base: "100%", sm: "60vw" }}
           aspectRatio="1 / 1"
           alignItems="center"
           justifyContent="center"
-          order={{ base: 1, md: 2 }}
+          order={{ base: 1, sm: 2 }}
         >
           <Image
             src={item.img}
             alt={item.name}
             w="100%"
             h="100%"
+            maxW={{ base: "100%", sm: "60%" }}
             objectFit="cover"
           />
         </Box>
