@@ -4,9 +4,15 @@ import { HStack, Button, Box } from "@chakra-ui/react";
 export default function SectionButtons() {
   const sections = ["جديد", "برجر", "تشيكن", "مشروبات"];
 
-  const scrollToSection = (id) => {
-    document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
-  };
+const scrollToSection = (id) => {
+  const element = document.getElementById(id);
+  if (!element) return;
+
+  const yOffset = -80;
+  const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+
+  window.scrollTo({ top: y, behavior: "smooth" });
+};
 
   return (
     <Box
