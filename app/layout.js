@@ -1,7 +1,7 @@
 import { Analytics } from "@vercel/analytics/next"
 import "@/styles/globals.css";
 import { mainFont } from "./fonts";
-import { Providers } from "./providers";
+import Providers from "./providers";
 
 export const metadata = {
   title: "CRTGO",
