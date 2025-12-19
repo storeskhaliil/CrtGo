@@ -79,20 +79,19 @@ export default function Overlay({ isOpen, onClose, item }) {
           aspectRatio="1 / 1"
           alignItems="center"
           justifyContent="center"
-          order={{ base: 1, sm: 2 }}
+          order={{ base: 1, md: 2 }}
         >
           <Image
             src={item.img}
             alt={item.name}
             w="100%"
             h="100%"
-            maxW={{ base: "100%", sm: "60%" }}
             objectFit="cover"
           />
         </Box>
       </Flex>
 
-      {/* Close button */}
+
 <Button
   position="fixed"
   bottom="18px"
@@ -101,8 +100,8 @@ export default function Overlay({ isOpen, onClose, item }) {
   bg="white"
   border="1px solid #000"
   color="#000"
-  _hover={{ bg: "rgba(0,0,0,0.1)" }}
-  _active={{ bg: "rgba(0,0,0,0.1)" }}
+  _hover={{ bg: "rgba(0,0,0,0.1)", color: "white" }}
+  _active={{ bg: "rgba(0,0,0,0.1)", color: "white" }}
   onClick={onClose}
   p="10px"
 >
