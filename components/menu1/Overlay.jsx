@@ -10,6 +10,7 @@ import {
   Button,
   Flex,
 } from "@chakra-ui/react";
+import { CloseIcon } from "@chakra-ui/icons";
 
 export default function Overlay({ isOpen, onClose, item }) {
   // 🔒 Lock background scroll
@@ -89,19 +90,21 @@ export default function Overlay({ isOpen, onClose, item }) {
       </Flex>
 
       {/* Close button */}
-      <Button
-        position="fixed"
-        bottom="20px"
-        left="50%"
-        transform="translateX(-50%)"
-        bg="transparent"
-        _hover={{ bg: "transparent" }}
-        _active={{ bg: "transparent" }}
-        fontSize="2xl"
-        onClick={onClose}
-      >
-        &#x2715;
-      </Button>
+<Button
+  position="fixed"
+  bottom="18px"
+  left="50%"
+  transform="translateX(-50%)"
+  bg="white"
+  color="#000"
+  _hover={{ bg: "rgba(0,0,0,0.2)" }}
+  _active={{ bg: "rgba(0,0,0,0.2)" }}
+  onClick={onClose}
+  p={0}
+  minW="auto"
+>
+  <CloseIcon boxSize={5} />
+</Button>
     </Box>
   );
 }
