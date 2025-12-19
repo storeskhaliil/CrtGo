@@ -7,6 +7,7 @@ export default function MenuCard({ name, price, desc, img, onClick }) {
       borderLeft="1px solid #1111111c"
       _first={{ borderLeft: "none" }}
       textAlign="center"
+      alignItems="center"
       cursor="pointer"
       onClick={onClick}
     >
