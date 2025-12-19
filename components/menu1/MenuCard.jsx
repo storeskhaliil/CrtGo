@@ -5,7 +5,7 @@ export default function MenuCard({ name, price, desc, img, onClick }) {
     <Box
       flex="0 0 260px"
       borderLeft="1px solid #1111111c"
-      _last={{ borderLeft: "none" }}
+      _first={{ borderLeft: "none" }}
       textAlign="center"
       cursor="pointer"
       onClick={onClick}
