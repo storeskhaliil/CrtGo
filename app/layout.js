@@ -4,8 +4,7 @@ import { mainFont } from "./fonts";
 import { Providers } from "./providers";
 
 export const metadata = {
-  title: "My App",
-  description: "My Next.js App",
+  title: "CRTGO",
 };
 
 export default function RootLayout({ children }) {
