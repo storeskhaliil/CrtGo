@@ -1,6 +1,7 @@
 // app/components/menu1/Overlay.jsx
 "use client";
 
+import { useEffect } from "react";
 import {
   Box,
   Image,
@@ -11,13 +12,25 @@ import {
 } from "@chakra-ui/react";
 
 export default function Overlay({ isOpen, onClose, item }) {
+  // 🔒 Lock background scroll
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [isOpen]);
+
   if (!isOpen || !item) return null;
 
   return (
     <Box
       position="fixed"
       inset="0"
-      bg="rgba(0,0,0,0.70)"
       bg="transparent"
       backdropFilter="blur(6px)"
       display="flex"
@@ -36,20 +49,26 @@ export default function Overlay({ isOpen, onClose, item }) {
         direction={{ base: "column", lg: "row" }}
         animation="slideUp 0.35s ease"
       >
-        {/* Info */}
+        {/* Info (Arabic / RTL) */}
         <Box
           flex="1"
           p={6}
           overflowY="auto"
           order={{ base: 2, lg: 1 }}
+          dir="rtl"
+          textAlign="right"
         >
           <Heading size="md" mb={2}>
             {item.name}
           </Heading>
+
           <Text mb={1} fontWeight="bold">
             {item.price}
           </Text>
-          <Text color="gray.500">{item.desc}</Text>
+
+          <Text color="gray.500" lineHeight="1.9">
+            {item.desc}
+          </Text>
         </Box>
 
         {/* Image */}
@@ -77,7 +96,7 @@ export default function Overlay({ isOpen, onClose, item }) {
         transform="translateX(-50%)"
         bg="transparent"
         _hover={{ bg: "transparent" }}
-        _active={{ bg: "rgba(0,0,0,0.70)" }}
+        _active={{ bg: "transparent" }}
         fontSize="2xl"
         onClick={onClose}
       >
